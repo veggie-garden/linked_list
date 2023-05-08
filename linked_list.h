@@ -6,7 +6,7 @@
 /*   By: cheseo <cheseo@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 17:11:48 by cheseo            #+#    #+#             */
-/*   Updated: 2023/01/06 11:35:19 by cheseo           ###   ########.fr       */
+/*   Updated: 2023/05/08 19:49:00 by cheseo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ struct s_my_list
 size_t	ft_strlen(const char *s);
 
 t_node	*create_node(void *content);
-void	stack_add_front(t_my_list *list, t_node *new);
-void	stack_add_back(t_my_list *list, t_node *new);
-t_node	*stack_pop_front(t_my_list *list);
-t_node	*stack_pop_back(t_my_list *list);
+void	list_add_front(t_my_list *list, t_node *new);
+void	list_add_back(t_my_list *list, t_node *new);
+t_node	*list_pop_front(t_my_list *list);
+t_node	*list_pop_back(t_my_list *list);
 
 void	print_list(t_my_list *list);
 void	free_list(t_my_list *list);

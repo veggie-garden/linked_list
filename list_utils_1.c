@@ -6,7 +6,7 @@
 /*   By: cheseo <cheseo@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 18:24:21 by cheseo            #+#    #+#             */
-/*   Updated: 2023/01/06 11:34:52 by cheseo           ###   ########.fr       */
+/*   Updated: 2023/05/08 19:49:00 by cheseo           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_node	*create_node(void *content)
 	return (new);
 }
 
-void	stack_add_front(t_my_list *list, t_node *new)
+void	list_add_front(t_my_list *list, t_node *new)
 {
 	if (!list || !new)
 		return ;
@@ -47,7 +47,7 @@ void	stack_add_front(t_my_list *list, t_node *new)
 	list->len += 1;
 }
 
-void	stack_add_back(t_my_list *list, t_node *new)
+void	list_add_back(t_my_list *list, t_node *new)
 {
 	if (!list || !new)
 		return ;
@@ -72,7 +72,7 @@ void	stack_add_back(t_my_list *list, t_node *new)
 	list->len += 1;
 }
 
-t_node	*stack_pop_front(t_my_list *list)
+t_node	*list_pop_front(t_my_list *list)
 {
 	t_node	*next;
 	t_node	*head;
@@ -92,7 +92,7 @@ t_node	*stack_pop_front(t_my_list *list)
 	return (head);
 }
 
-t_node	*stack_pop_back(t_my_list *list)
+t_node	*list_pop_back(t_my_list *list)
 {
 	t_node	*node;
 
